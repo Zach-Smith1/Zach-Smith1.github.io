@@ -2252,18 +2252,18 @@ input, select, textarea {
 		background-repeat: repeat, no-repeat;
 	}
 
-/* One */
+/* What */
 
-	#one {
+	#what {
 		background: url("images/dual.jpg"), url("../../images/one.jpg");
 		background-size: cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
 
-/* Two */
+/* Who */
 
-	#two {
+	#who {
 		background: url("images/sideways.jpg"), url("../../images/two.jpg");
 		background-size: cover;
 		background-attachment: fixed, fixed;
