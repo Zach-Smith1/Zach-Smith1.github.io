@@ -623,7 +623,7 @@ input, select, textarea {
 	.box {
 		background: #ffffff;
 		color: #39454b;
-		padding: 2em;
+		padding: 0.5em;
 	}
 
 		.box > :last-child {
@@ -631,7 +631,7 @@ input, select, textarea {
 		}
 
 		.box.style2 {
-			padding: 3.5em 2.5em 3.5em 2.5em;
+			padding: 1.5em 0em 0.em 1.5em;
 		}
 
 		@media screen and (max-width: 736px) {
@@ -2177,7 +2177,7 @@ input, select, textarea {
 		margin: 0;
 		line-height: 1em;
 		padding: 1.5em;
-		background: #2e383c;
+		background: #29282e;
 		color: rgba(254, 254, 255, 0.5);
 		overflow: hidden;
 	}
@@ -2255,7 +2255,7 @@ input, select, textarea {
 /* What */
 
 	#what {
-		background: url("images/dual.jpg"), url("../../images/one.jpg");
+		background: url("images/dual.jpg"), url("../../images/dual.jpg");
 		background-size: cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -2264,7 +2264,7 @@ input, select, textarea {
 /* Who */
 
 	#who {
-		background: url("images/sideways.jpg"), url("../../images/two.jpg");
+		background: url("images/sideways.jpg"), url("../../images/sideways.jpg");
 		background-size: cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
