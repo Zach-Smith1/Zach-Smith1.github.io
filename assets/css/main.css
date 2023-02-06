@@ -2305,6 +2305,8 @@ input, select, textarea {
 		}
 		#popup {
 			display: none;
+			width: 0;
+			height: 0;
 		}
 		@media screen and (max-width: 480px) {
 
@@ -2313,6 +2315,7 @@ input, select, textarea {
 			}
     /* show the popup */
     #popup {
+			display: block;
 			visibility: hidden;
   		opacity: 0;
   		transition: visibility 1s 4s, opacity 4s linear;
