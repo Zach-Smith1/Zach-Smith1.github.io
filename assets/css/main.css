@@ -2303,11 +2303,19 @@ input, select, textarea {
 			}
 
 		}
-
+		#popup {
+			display: none;
+		}
 		@media screen and (max-width: 480px) {
 
 			#contact .box {
 				padding: 1em 1em 2em 1em;
 			}
+    /* show the popup */
+    #popup {
+			visibility: hidden;
+  		opacity: 0;
+  		transition: visibility 1s 4s, opacity 4s linear;
+		}
 
 		}
