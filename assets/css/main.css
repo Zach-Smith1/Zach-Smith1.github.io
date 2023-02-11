@@ -2305,9 +2305,8 @@ input, select, textarea {
 		}
 		#popup {
 			display: none;
-  		opacity: 1;
 		}
-		@media only screen and (max-width: 900px) {
+		@media screen and (max-width: 900px) {
 
 			#contact .box {
 				padding: 1em 1em 2em 1em;
@@ -2315,9 +2314,14 @@ input, select, textarea {
     /* show the popup */
     #popup {
 			display: block;
-  		opacity: 0;
-  		transition-delay: opacity 2s;
-			transition-duration: opacity 4s;
+			opacity: 1;
+			transition-duration: 2s;
 		}
 
 		}
+		a.anchor {
+			display: block;
+			position: relative;
+			top: -60px;
+			visibility: hidden;
+	}
