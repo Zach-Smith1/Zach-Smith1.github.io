@@ -2304,9 +2304,7 @@ input, select, textarea {
 
 		}
 		#popup {
-			display: block;
-			opacity: 1;
-			transition-duration: 2s;
+			display: none;
 		}
 		a.anchor {
 			display: block;
