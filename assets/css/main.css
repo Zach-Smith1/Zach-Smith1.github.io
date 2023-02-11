@@ -29,6 +29,10 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	line-height: 1;
 }
@@ -2309,7 +2313,7 @@ input, select, textarea {
 		a.anchor {
 			display: block;
 			position: relative;
-			top: -60px;
+			top: -3em;
 			visibility: hidden;
 	  }
 		@media screen and (max-width: 800px) {
@@ -2326,7 +2330,7 @@ input, select, textarea {
 		a.anchor {
 			display: block;
 			position: relative;
-			top: 0px;
+			top: 3em;
 			visibility: hidden;
 	  }
 		}
