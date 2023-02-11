@@ -2328,11 +2328,5 @@ input, select, textarea {
 			opacity: 1;
 			transition-duration: 2s;
 		}
-		a.anchor {
-			display: block;
-			position: absolute;
-			top: 60px;
-			visibility: hidden;
-	  }
 		}
 
