@@ -2330,7 +2330,7 @@ input, select, textarea {
 		}
 		a.anchor {
 			display: block;
-			position: relative;
+			position: absolute;
 			top: 60px;
 			visibility: hidden;
 	  }
