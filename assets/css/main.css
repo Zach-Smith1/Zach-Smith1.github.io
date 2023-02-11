@@ -2331,7 +2331,7 @@ input, select, textarea {
 		a.anchor {
 			display: block;
 			position: relative;
-			top: 0em;
+			top: 60px;
 			visibility: hidden;
 	  }
 		}
