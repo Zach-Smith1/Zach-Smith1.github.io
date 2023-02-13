@@ -2318,9 +2318,9 @@ input, select, textarea {
 	  }
 		@media screen and (max-width: 800px) {
 
-			#contact .box {
-				padding: 1em 1em 2em 1em;
-			}
+		#contact .box {
+			padding: 1em 1em 2em 1em;
+		}
     /* show the popup */
     #popup {
 			display: block;
@@ -2328,7 +2328,8 @@ input, select, textarea {
 			opacity: 1;
 			transition-duration: 2s;
 		}
-
+	  }
+		@media screen and (max-height: 800px) {
 		input[type="button"].down,
 		input[type="submit"].down,
 		input[type="reset"].down,
@@ -2343,6 +2344,17 @@ input, select, textarea {
 			background-repeat: no-repeat;
 			text-indent: -10em;
 			overflow: hidden;
+		}
+		input[type="button"].down.anchored,
+		input[type="submit"].down.anchored,
+		input[type="reset"].down.anchored,
+		.button.down.anchored,
+		button.down.anchored {
+			bottom: 0;
+			border-bottom: 0;
+			border-radius: 3em 3em 0 0;
+			height: 4.5em;
+			margin-left: -2.5em;
 		}
 		}
 
