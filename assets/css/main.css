@@ -2312,7 +2312,7 @@ input, select, textarea {
 			display: none;
 		}
 		#arrow {
-			position: absolute;
+			position: relative;
 			top: 2em;
 			max-height:1em;
 		}
@@ -2335,8 +2335,8 @@ input, select, textarea {
 			transition-duration: 2s;
 		}
 		#arrow {
-			position: absolute;
-			top: 4em;
+			position: relative;
+			top: 3em;
 		}
 	  }
 		/*For landscape mode on mobile*/
@@ -2368,8 +2368,8 @@ input, select, textarea {
 			margin-left: -2.5em;
 		}
 		#arrow {
-			position: absolute;
-			top: 4em;
+			position: relative;
+			top: 3em;
 		}
 		}
 
