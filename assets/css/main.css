@@ -2307,8 +2307,14 @@ input, select, textarea {
 			}
 
 		}
+		/*Added properties for better UI on mobile*/
 		#popup {
 			display: none;
+		}
+		#arrow {
+			position: absolute;
+			top: 2em;
+			max-height:1em;
 		}
 		a.anchor {
 			display: block;
@@ -2316,8 +2322,8 @@ input, select, textarea {
 			top: -3em;
 			visibility: hidden;
 	  }
+		/*For portrait mode on mobile*/
 		@media screen and (max-width: 800px) {
-
 		#contact .box {
 			padding: 1em 1em 2em 1em;
 		}
@@ -2329,9 +2335,11 @@ input, select, textarea {
 			transition-duration: 2s;
 		}
 		#arrow {
-			top: 4em
+			position: absolute;
+			top: 4em;
 		}
 	  }
+		/*For landscape mode on mobile*/
 		@media screen and (max-height: 400px) {
 		input[type="button"].down,
 		input[type="submit"].down,
@@ -2358,6 +2366,10 @@ input, select, textarea {
 			border-radius: 3em 3em 0 0;
 			height: 2.5em;
 			margin-left: -2.5em;
+		}
+		#arrow {
+			position: absolute;
+			top: 4em;
 		}
 		}
 
