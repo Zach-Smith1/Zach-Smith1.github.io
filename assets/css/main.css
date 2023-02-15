@@ -2313,7 +2313,6 @@ input, select, textarea {
 		}
 		#arrow {
 			position: relative;
-			top: 2em;
 			max-height:1em;
 		}
 		a.anchor {
@@ -2333,10 +2332,6 @@ input, select, textarea {
 			color: black;
 			opacity: 1;
 			transition-duration: 2s;
-		}
-		#arrow {
-			position: relative;
-			top: 3em;
 		}
 	  }
 		/*For landscape mode on mobile*/
@@ -2366,10 +2361,6 @@ input, select, textarea {
 			border-radius: 3em 3em 0 0;
 			height: 2.5em;
 			margin-left: -2.5em;
-		}
-		#arrow {
-			position: relative;
-			top: 3em;
 		}
 		}
 
