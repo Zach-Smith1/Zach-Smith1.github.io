@@ -2328,8 +2328,11 @@ input, select, textarea {
 			opacity: 1;
 			transition-duration: 2s;
 		}
+		#arrow {
+			top: 4em
+		}
 	  }
-		@media screen and (max-height: 800px) {
+		@media screen and (max-height: 400px) {
 		input[type="button"].down,
 		input[type="submit"].down,
 		input[type="reset"].down,
@@ -2353,7 +2356,7 @@ input, select, textarea {
 			bottom: 0;
 			border-bottom: 0;
 			border-radius: 3em 3em 0 0;
-			height: 4.5em;
+			height: 2.5em;
 			margin-left: -2.5em;
 		}
 		}
