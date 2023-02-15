@@ -2335,7 +2335,7 @@ input, select, textarea {
 		}
 	  }
 		/*For landscape mode on mobile*/
-		@media screen and (max-height: 400px) {
+		@media screen and (max-height: 450px) {
 		input[type="button"].down,
 		input[type="submit"].down,
 		input[type="reset"].down,
