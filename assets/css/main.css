@@ -2333,6 +2333,9 @@ input, select, textarea {
 			opacity: 1;
 			transition-duration: 2s;
 		}
+		a.anchor {
+			top: 0px;
+	  }
 	  }
 		/*For landscape mode on mobile*/
 		@media screen and (max-height: 450px) {
@@ -2362,5 +2365,8 @@ input, select, textarea {
 			height: 2.5em;
 			margin-left: -2.5em;
 		}
+		a.anchor {
+			top: 0px;
+	  }
 		}
 
