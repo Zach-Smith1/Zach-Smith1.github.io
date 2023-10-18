@@ -1,15 +1,11 @@
 <!DOCTYPE HTML>
-<!--
-	Big Picture by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Hire Zach</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/png" href="/images/thumbsUpIcon.png">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<script>
 			window.onload = function() {
@@ -23,40 +19,47 @@
 					document.getElementById("popup").style.opacity = 0;
 				}, 4000);
 			};
+			window.addEventListener('resize', function() {
+				let anchors = document.getElementsByClassName("anchor");
+				console.log(anchors)
+				for (let i = 0; i < anchors.length; i ++) {
+					anchors[i].style.top = '-1px';
+				}
+			});
 		</script>
 	</head>
 	<body class="is-preload">
 		<!-- Header -->
 			<header id="header">
-				<h1><a href="#introAnchor">Zach Smith</a></li></h1>
+				<h1><a href="#intro">Zach Smith</a></h1>
 				<nav>
 					<ul>
 						<!-- <li><a href="#intro">Intro</a></li> -->
-						<li><a href="#whatAnchor">What I Do</a></li>
-						<li><a href="#whoAnchor">Who I Am</a></li>
-						<li><a href="#workAnchor">My Work</a></li>
-						<li><a href="#footerAnchor">Connect</a></li>
+						<li><a href="#whatIDo">What I Do</a></li>
+						<li><a href="#whoIAm">Who I Am</a></li>
+						<li><a href="#myWork">My Work</a></li>
+						<li><a href="#connect">Connect</a></li>
 					</ul>
 				</nav>
 			</header>
 
 		<!-- Intro -->
-		<a class="anchor" id="introAnchor"></a>
+		<a class="anchor" id="intro"></a>
 			<section id="intro" class="main style1 dark fullscreen">
 				<div class="content">
-					<div id="popup" class="fade-out">For best experience turn phone sideways, reload page</div>
+					<div id="popup" class="fade-out">Turn phone sideways for best experience</div>
 					<header>
 						<h2>Hi I'm Zach,</h2>
 					</header>
 					<p>A Full Stack Software Engineer who loves to explore new territory</p>
 					<footer>
-						<a href="#whatAnchor" class="button style2 down"></a>
+						<a href="#whatIDo" class="button style2 down"></a>
 					</footer>
 				</div>
 			</section>
 
 		<!-- What I Do -->
-		<a class="anchor" id="whatAnchor"></a>
+		<a class="anchor" id="whatIDo"></a>
 			<section id="what" class="main style2 left dark fullscreen">
 				<div class="content box style2">
 					<header>
@@ -64,11 +67,11 @@
 					</header>
 					<p>I create Full Stack applications and specialize in JavaScript development. I excel in collaborating with diverse teams of programmers and I'm always eager to learn new languages and tech stacks. I'm a systematic problem-solver and experienced bug-hunter with a knack for seeing the big picture.</p>
 				</div>
-				<a href="#whoAnchor" class="button style2 down anchored"></a>
+				<a href="#whoIAm" class="button style2 down anchored"></a>
 			</section>
 
 		<!-- Who I Am -->
-		<a class="anchor" id="whoAnchor"></a>
+		<a class="anchor" id="whoIAm"></a>
 			<section id="who" class="main style2 right dark fullscreen">
 				<div class="content box style2">
 					<header>
@@ -77,11 +80,11 @@
 					<p>I'm always striving to see from different angles and get a wider perspective.
 					I have a background in service and hospitality, a life sciences degree, and have spent years abroad constantly learning and growing. I feel so grateful to have found my passion for software engineering and am excited to keep collaborating with great teams on important applications.</p>
 				</div>
-				<a href="#workAnchor" class="button style2 down anchored"></a>
+				<a href="#myWork" class="button style2 down anchored"></a>
 			</section>
 
 		<!-- Work -->
-		<a class="anchor" id="workAnchor"></a>
+		<a class="anchor" id="myWork"></a>
 			<section id="work" class="main style3 primary">
 				<div class="content">
 					<header>
@@ -90,9 +93,15 @@
 					</header>
 
 					<!-- Gallery  -->
-						<div class="gallery">
+					<div class="gallery">
 							<article class="from-left">
+								<a href="https://mybudgeter-e8d85af39cf4.herokuapp.com/" title="A personal budget tracking application I have under development." target="_blank" class="image fit"><img src="images/bugetApp.jpg" alt="" /></a>
+							</article>
+							<article class="from-right">
 								<a href="https://github.com/rfc2205-Callisto/project-atelier" title="Project Atelier: A complete e-commerce application front end build-out. 			Pictured: Example of a function I created to display up-to-date product information" target="_blank" class="image fit"><img src="images/charmap.jpg" alt=""/></a>
+							</article>
+							<article class="from-left">
+								<a href="https://github.com/Zach-Smith1/pharmData" title="Custom node.js program built for pharmaceutical software company." target="_blank" ><img src="images/pharmData.jpg" class="image fit"  alt="" /></a>
 							</article>
 							<article class="from-right">
 								<a href="https://github.com/rfc2205-Callisto/project-atelier" title="Project Atelier: A complete e-commerce application front end build-out. 			Pictured: Review submission form box I made to allow user feedback" target="_blank" ><img src="images/FECex1.jpeg"  class="image fit"  alt="" /></a>
@@ -118,9 +127,13 @@
 			<section id="content" class="main style3 secondary">
 				<div class="content">
 					<header>
-						<h2>Thank you for your time</h2>
+						<h2>Let's Connect!</h2>
 
-						<p>View my resume <a href="https://docs.google.com/document/d/13fPb5KFPa0rlZ8uXGmFYWvaF2xR2WUNcd_2ZxNVxiLg/edit?usp=sharing" target="_blank">here</a> and connect with me below.<br/>Have a great rest of your day!</p>
+						<p>Find me online below or view my resume
+							<a href="images/Zach_Smith_Resume.pdf" target="_blank">here</a>.
+							<!-- <a href="https://docs.google.com/document/d/13fPb5KFPa0rlZ8uXGmFYWvaF2xR2WUNcd_2ZxNVxiLg/edit?usp=sharing" target="_blank">here</a>. -->
+						</p>
+						<span>Have a great rest of your day!</p>
 					</header>
 					<!-- <div class="box">
 						<form method="post" action="#">
@@ -139,17 +152,16 @@
 			</section>
 
 		<!-- Footer -->
-		<a class="anchor" id="footerAnchor"></a>
+		<a class="anchor" id="connect"></a>
 			<footer id="footer">
 
 				<!-- Icons -->
 					<ul class="icons">
 						<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li> -->
-						<li><a href="https://www.facebook.com/zach.smith.33671748" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="https://www.linkedin.com/in/zachsmithsoftware/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/Zach-Smith1" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>-->
+						<li><a href="https://www.facebook.com/zach.smith.33671748" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.linkedin.com/in/zachsmithsoftware/" class="icon brands fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/Zach-Smith1" class="icon brands fa-github" ><span class="label">GitHub</span></a></li>
 						<li><img id='arrow' src="images/leftarrow.gif"/></li>
 					</ul>
 
