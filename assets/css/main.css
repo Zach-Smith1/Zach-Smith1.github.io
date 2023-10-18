@@ -2174,6 +2174,10 @@ input, select, textarea {
 			opacity: 1;
 			transition-duration: 2s;
 		}
+		#introHead {
+			opacity: 0;
+			transition-duration: 2s;
+		}
 	  }
 		/*For landscape mode on mobile*/
 		@media screen and (max-height: 450px) {

@@ -9,16 +9,19 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<script>
 			window.onload = function() {
+				// makes mobile portrait mode pop-up
 				setTimeout(function() {
 					document.getElementById("popup").style.color = 'white';
 				}, 1000);
 				setTimeout(function() {
-					document.getElementById("popup").style.fontSize = '13pt';
+					document.getElementById("popup").style.fontSize = '15pt';
 				}, 2000);
 				setTimeout(function() {
 					document.getElementById("popup").style.opacity = 0;
+					document.getElementById("introHead").style.opacity = 1;
 				}, 4000);
 			};
+			// fixes anchors moving on page resize
 			window.addEventListener('resize', function() {
 				let anchors = document.getElementsByClassName("anchor");
 				console.log(anchors)
@@ -34,7 +37,6 @@
 				<h1><a href="#intro">Zach Smith</a></h1>
 				<nav>
 					<ul>
-						<!-- <li><a href="#intro">Intro</a></li> -->
 						<li><a href="#whatIDo">What I Do</a></li>
 						<li><a href="#whoIAm">Who I Am</a></li>
 						<li><a href="#myWork">My Work</a></li>
@@ -48,10 +50,10 @@
 			<section id="intro" class="main style1 dark fullscreen">
 				<div class="content">
 					<div id="popup" class="fade-out">Turn phone sideways for best experience</div>
-					<header>
+					<header id="introHead">
 						<h2>Hi I'm Zach,</h2>
+						<p>A Full Stack Software Engineer who loves to explore new territory</p>
 					</header>
-					<p>A Full Stack Software Engineer who loves to explore new territory</p>
 					<footer>
 						<a href="#whatIDo" class="button style2 down"></a>
 					</footer>
@@ -174,8 +176,8 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
-			<!-- <script src="assets/js/jquery.poptrox.min.js"></script> -->
 			<!-- uncomment to link to full size images from thumbnails instead of websites -->
+			<!-- <script src="assets/js/jquery.poptrox.min.js"></script> -->
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
