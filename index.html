@@ -1,143 +1,177 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Hire Zach</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" type="image/png" href="/images/thumbsUpIcon.png">
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script>
-			window.onload = function() {
-				// makes mobile portrait mode pop-up
-				setTimeout(function() {
-					document.getElementById("popup").style.color = 'white';
-				}, 1000);
-				setTimeout(function() {
-					document.getElementById("popup").style.fontSize = '15pt';
-				}, 2000);
-				setTimeout(function() {
-					document.getElementById("popup").style.opacity = 0;
-					document.getElementById("introHead").style.opacity = 1;
-				}, 4000);
-			};
-			// fixes anchors moving on page resize
-			window.addEventListener('resize', function() {
-				let anchors = document.getElementsByClassName("anchor");
-				console.log(anchors)
-				for (let i = 0; i < anchors.length; i ++) {
-					anchors[i].style.top = '-1px';
-				}
-			});
-		</script>
-	</head>
-	<body class="is-preload">
-		<!-- Header -->
-			<header id="header">
-				<h1><a href="#intro">Zach Smith</a></h1>
-				<nav>
-					<ul>
-						<li><a href="#whatIDo">What I Do</a></li>
-						<li><a href="#whoIAm">Who I Am</a></li>
-						<li><a href="#myWork">My Work</a></li>
-						<li><a href="#connect">Connect</a></li>
-					</ul>
-				</nav>
+
+<head>
+	<title>Hire Zach</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="icon" type="image/png" href="/images/thumbsUpIcon.png">
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<!-- Google tag end (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VYPRV77GD7"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-VYPRV77GD7');
+	</script>
+	<!-- Google tag end -->
+	<script>
+		window.onload = function () {
+			// makes mobile portrait mode pop-up
+			setTimeout(function () {
+				document.getElementById("popup").style.color = 'white';
+			}, 1000);
+			setTimeout(function () {
+				document.getElementById("popup").style.fontSize = '15pt';
+			}, 2000);
+			setTimeout(function () {
+				document.getElementById("popup").style.opacity = 0;
+				document.getElementById("introHead").style.opacity = 1;
+			}, 4000);
+		};
+		// fixes anchors moving on page resize
+		window.addEventListener('resize', function () {
+			let anchors = document.getElementsByClassName("anchor");
+			console.log(anchors)
+			for (let i = 0; i < anchors.length; i++) {
+				anchors[i].style.top = '-1px';
+			}
+		});
+	</script>
+</head>
+
+<body class="is-preload">
+	<!-- Header -->
+	<header id="header">
+		<h1><a href="#intro">Zach Smith</a></h1>
+		<nav>
+			<ul>
+				<li><a href="#whatIDo">What I Do</a></li>
+				<li><a href="#whoIAm">Who I Am</a></li>
+				<li><a href="#myWork">My Work</a></li>
+				<li><a href="#connect">Connect</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Intro -->
+	<a class="anchor" id="intro"></a>
+	<section id="intro" class="main style1 dark fullscreen">
+		<div class="content">
+			<div id="popup" class="fade-out">Turn phone sideways for best experience</div>
+			<header id="introHead">
+				<h2>Hi I'm Zach,</h2>
+				<p>A Full Stack Software Engineer who loves to explore new territory</p>
+			</header>
+			<footer>
+				<a href="#whatIDo" class="button style2 down"></a>
+			</footer>
+		</div>
+	</section>
+
+	<!-- What I Do -->
+	<a class="anchor" id="whatIDo"></a>
+	<section id="what" class="main style2 left dark fullscreen">
+		<div class="content box style2">
+			<header>
+				<h2>What I Do</h2>
+			</header>
+			<p>I create Full Stack applications and specialize in JavaScript development. I excel in collaborating with
+				diverse teams of programmers and I'm always eager to learn new languages and tech stacks. I'm a systematic
+				problem-solver and experienced bug-hunter with a knack for seeing the big picture.</p>
+		</div>
+		<a href="#whoIAm" class="button style2 down anchored"></a>
+	</section>
+
+	<!-- Who I Am -->
+	<a class="anchor" id="whoIAm"></a>
+	<section id="who" class="main style2 right dark fullscreen">
+		<div class="content box style2">
+			<header>
+				<h2>Who I Am</h2>
+			</header>
+			<p>I'm always striving to see from different angles and get a wider perspective.
+				I have a background in service and hospitality, a life sciences degree, and have spent years abroad constantly
+				learning and growing. I feel so grateful to have found my passion for software engineering and am excited to
+				keep collaborating with great teams on important applications.</p>
+		</div>
+		<a href="#myWork" class="button style2 down anchored"></a>
+	</section>
+
+	<!-- Work -->
+	<a class="anchor" id="myWork"></a>
+	<section id="work" class="main style3 primary">
+		<div class="content">
+			<header>
+				<h2>My Work</h2>
+				<p>A selection of projects completed solo or with small teams of developers</p>
 			</header>
 
-		<!-- Intro -->
-		<a class="anchor" id="intro"></a>
-			<section id="intro" class="main style1 dark fullscreen">
-				<div class="content">
-					<div id="popup" class="fade-out">Turn phone sideways for best experience</div>
-					<header id="introHead">
-						<h2>Hi I'm Zach,</h2>
-						<p>A Full Stack Software Engineer who loves to explore new territory</p>
-					</header>
-					<footer>
-						<a href="#whatIDo" class="button style2 down"></a>
-					</footer>
-				</div>
-			</section>
+			<!-- Gallery  -->
+			<div class="gallery">
+				<article class="from-left">
+					<a href="https://mybudgeter-e8d85af39cf4.herokuapp.com/"
+						title="A personal budget tracking application I have under development." target="_blank"
+						class="image fit"><img src="images/bugetApp.jpg" alt="" /></a>
+				</article>
+				<article class="from-right">
+					<a href="https://github.com/rfc2205-Callisto/project-atelier"
+						title="Project Atelier: A complete e-commerce application front end build-out. 			Pictured: Example of a function I created to display up-to-date product information"
+						target="_blank" class="image fit"><img src="images/charmap.jpg" alt="" /></a>
+				</article>
+				<article class="from-left">
+					<a href="https://github.com/Zach-Smith1/pharmData"
+						title="Custom node.js program built for pharmaceutical software company." target="_blank"><img
+							src="images/pharmData.jpg" class="image fit" alt="" /></a>
+				</article>
+				<article class="from-right">
+					<a href="https://github.com/rfc2205-Callisto/project-atelier"
+						title="Project Atelier: A complete e-commerce application front end build-out. 			Pictured: Review submission form box I made to allow user feedback"
+						target="_blank"><img src="images/FECex1.jpeg" class="image fit" alt="" /></a>
+				</article>
+				<article class="from-left">
+					<a href="https://github.com/Zach-Smith1/Travel-Roulette/tree/main/src"
+						title="Travel-Roulette: An app I built during a two day sprint that integrates Google Maps API to display random travel destinations that can be added to an itinerary"
+						target="_blank" class="image fit"><img src="images/roulette.jpg" alt="" /></a>
+				</article>
+				<article class="from-right">
+					<a href="https://github.com/Team-Dagobah/SDC-Q-A"
+						title="Results of K6 speed test run on my SQL Database to test efficiency of my queries." target="_blank"
+						class="image fit"><img src="images/speedTest.jpg" alt="" /></a>
+				</article>
+				<article class="from-left">
+					<a href="https://github.com/Team-Dagobah/SDC-Q-A"
+						title="Example of the query structure I wrote for a back end focused project" target="_blank"
+						class="image fit"><img src="images/sqlex.jpg" alt="" /></a>
+				</article>
+				<article class="from-right">
+					<a href="https://github.com/Blue-Ocean-Ursula/weJams/tree/newMain/frontend/src/components/homepage"
+						title="Homepage for WeJamz social media music application I helped develop with a team of other software engineers"
+						target="_blank" class="image fit"><img src="images/weJamz.jpg" alt="" /></a>
+				</article>
+			</div>
 
-		<!-- What I Do -->
-		<a class="anchor" id="whatIDo"></a>
-			<section id="what" class="main style2 left dark fullscreen">
-				<div class="content box style2">
-					<header>
-						<h2>What I Do</h2>
-					</header>
-					<p>I create Full Stack applications and specialize in JavaScript development. I excel in collaborating with diverse teams of programmers and I'm always eager to learn new languages and tech stacks. I'm a systematic problem-solver and experienced bug-hunter with a knack for seeing the big picture.</p>
-				</div>
-				<a href="#whoIAm" class="button style2 down anchored"></a>
-			</section>
+		</div>
+	</section>
 
-		<!-- Who I Am -->
-		<a class="anchor" id="whoIAm"></a>
-			<section id="who" class="main style2 right dark fullscreen">
-				<div class="content box style2">
-					<header>
-						<h2>Who I Am</h2>
-					</header>
-					<p>I'm always striving to see from different angles and get a wider perspective.
-					I have a background in service and hospitality, a life sciences degree, and have spent years abroad constantly learning and growing. I feel so grateful to have found my passion for software engineering and am excited to keep collaborating with great teams on important applications.</p>
-				</div>
-				<a href="#myWork" class="button style2 down anchored"></a>
-			</section>
+	<!-- Contact -->
+	<section id="content" class="main style3 secondary">
+		<div class="content">
+			<header>
+				<h2>Let's Connect!</h2>
 
-		<!-- Work -->
-		<a class="anchor" id="myWork"></a>
-			<section id="work" class="main style3 primary">
-				<div class="content">
-					<header>
-						<h2>My Work</h2>
-						<p>A selection of projects completed solo or with small teams of developers</p>
-					</header>
-
-					<!-- Gallery  -->
-					<div class="gallery">
-							<article class="from-left">
-								<a href="https://mybudgeter-e8d85af39cf4.herokuapp.com/" title="A personal budget tracking application I have under development." target="_blank" class="image fit"><img src="images/bugetApp.jpg" alt="" /></a>
-							</article>
-							<article class="from-right">
-								<a href="https://github.com/rfc2205-Callisto/project-atelier" title="Project Atelier: A complete e-commerce application front end build-out. 			Pictured: Example of a function I created to display up-to-date product information" target="_blank" class="image fit"><img src="images/charmap.jpg" alt=""/></a>
-							</article>
-							<article class="from-left">
-								<a href="https://github.com/Zach-Smith1/pharmData" title="Custom node.js program built for pharmaceutical software company." target="_blank" ><img src="images/pharmData.jpg" class="image fit"  alt="" /></a>
-							</article>
-							<article class="from-right">
-								<a href="https://github.com/rfc2205-Callisto/project-atelier" title="Project Atelier: A complete e-commerce application front end build-out. 			Pictured: Review submission form box I made to allow user feedback" target="_blank" ><img src="images/FECex1.jpeg"  class="image fit"  alt="" /></a>
-							</article>
-							<article class="from-left">
-								<a href="https://github.com/Zach-Smith1/Travel-Roulette/tree/main/src" title="Travel-Roulette: An app I built during a two day sprint that integrates Google Maps API to display random travel destinations that can be added to an itinerary" target="_blank" class="image fit"><img src="images/roulette.jpg" alt="" /></a>
-							</article>
-							<article class="from-right">
-								<a href="https://github.com/Team-Dagobah/SDC-Q-A" title="Results of K6 speed test run on my SQL Database to test efficiency of my queries." target="_blank" class="image fit"><img src="images/speedTest.jpg" alt="" /></a>
-							</article>
-							<article class="from-left">
-								<a href="https://github.com/Team-Dagobah/SDC-Q-A" title="Example of the query structure I wrote for a back end focused project" target="_blank" class="image fit"><img src="images/sqlex.jpg" alt="" /></a>
-							</article>
-							<article class="from-right">
-								<a href="https://github.com/Blue-Ocean-Ursula/weJams/tree/newMain/frontend/src/components/homepage" title="Homepage for WeJamz social media music application I helped develop with a team of other software engineers" target="_blank" class="image fit"><img src="images/weJamz.jpg" alt="" /></a>
-							</article>
-						</div>
-
-				</div>
-			</section>
-
-		<!-- Contact -->
-			<section id="content" class="main style3 secondary">
-				<div class="content">
-					<header>
-						<h2>Let's Connect!</h2>
-
-						<p>Find me online below or view my resume
-							<a href="images/Zach_Smith_Resume.pdf" target="_blank">here</a>.
-							<!-- <a href="https://docs.google.com/document/d/13fPb5KFPa0rlZ8uXGmFYWvaF2xR2WUNcd_2ZxNVxiLg/edit?usp=sharing" target="_blank">here</a>. -->
-						</p>
-						<span>Have a great rest of your day!</p>
-					</header>
-					<!-- <div class="box">
+				<p>Find me online below or view my resume
+					<a href="images/Zach_Smith_Resume.pdf" target="_blank">here</a>.
+					<!-- <a href="https://docs.google.com/document/d/13fPb5KFPa0rlZ8uXGmFYWvaF2xR2WUNcd_2ZxNVxiLg/edit?usp=sharing" target="_blank">here</a>. -->
+				</p>
+				<span>Have a great rest of your day!</p>
+			</header>
+			<!-- <div class="box">
 						<form method="post" action="#">
 							<div class="fields">
 								<div class="field half"><input type="text" name="name" placeholder="Name" /></div>
@@ -149,41 +183,46 @@
 							</ul>
 						</form>
 					</div> -->
-				</div>
+		</div>
 
-			</section>
+	</section>
 
-		<!-- Footer -->
-		<a class="anchor" id="connect"></a>
-			<footer id="footer">
+	<!-- Footer -->
+	<a class="anchor" id="connect"></a>
+	<footer id="footer">
 
-				<!-- Icons -->
-					<ul class="icons">
-						<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+		<!-- Icons -->
+		<ul class="icons">
+			<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>-->
-						<li><a href="https://www.facebook.com/zach.smith.33671748" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
-						<li><a href="https://www.linkedin.com/in/zachsmithsoftware/" class="icon brands fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/Zach-Smith1" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-						<li><img id='arrow' src="images/leftarrow.gif"/></li>
-					</ul>
+			<li><a href="https://www.facebook.com/zach.smith.33671748" class="icon brands fa-facebook-f" target="_blank"><span
+						class="label">Facebook</span></a></li>
+			<li><a href="https://www.linkedin.com/in/zachsmithsoftware/" class="icon brands fa-linkedin-in"
+					target="_blank"><span class="label">LinkedIn</span></a></li>
+			<li><a href="https://github.com/Zach-Smith1" class="icon brands fa-github" target="_blank"><span
+						class="label">GitHub</span></a></li>
+			<li><img id='arrow' src="images/leftarrow.gif" /></li>
+		</ul>
 
-				<!-- Menu -->
-					<ul class="menu">
-						</li><li>&copy; 2023</li>
-					</ul>
+		<!-- Menu -->
+		<ul class="menu">
+			</li>
+			<li>&copy; 2023</li>
+		</ul>
 
-			</footer>
+	</footer>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<!-- uncomment to link to full size images from thumbnails instead of websites -->
-			<!-- <script src="assets/js/jquery.poptrox.min.js"></script> -->
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<!-- uncomment to link to full size images from thumbnails instead of websites -->
+	<!-- <script src="assets/js/jquery.poptrox.min.js"></script> -->
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 
-	</body>
+</body>
+
 </html>
