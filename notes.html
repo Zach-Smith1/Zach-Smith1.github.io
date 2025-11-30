@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Notes</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+        <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48IS0tIUZvbnQgQXdlc29tZSBGcmVlIDYuNy4yIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlL2ZyZWUgQ29weXJpZ2h0IDIwMjUgRm9udGljb25zLCBJbmMuLS0+PHBhdGggZD0iTTI3OC41IDIxNS42TDIzIDQ3MWMtOS40IDkuNC05LjQgMjQuNiAwIDMzLjlzMjQuNiA5LjQgMzMuOSAwbDU3LTU3IDY4IDBjNDkuNyAwIDk3LjktMTQuNCAxMzktNDFjMTEuMS03LjIgNS41LTIzLTcuOC0yM2MtNS4xIDAtOS4yLTQuMS05LjItOS4yYzAtNC4xIDIuNy03LjYgNi41LTguOGw4MS0yNC4zYzIuNS0uOCA0LjgtMi4xIDYuNy00bDIyLjQtMjIuNGMxMC4xLTEwLjEgMi45LTI3LjMtMTEuMy0yNy4zbC0zMi4yIDBjLTUuMSAwLTkuMi00LjEtOS4yLTkuMmMwLTQuMSAyLjctNy42IDYuNS04LjhsMTEyLTMzLjZjNC0xLjIgNy40LTMuOSA5LjMtNy43QzUwNi40IDIwNy42IDUxMiAxODQuMSA1MTIgMTYwYzAtNDEtMTYuMy04MC4zLTQ1LjMtMTA5LjNsLTUuNS01LjVDNDMyLjMgMTYuMyAzOTMgMCAzNTIgMHMtODAuMyAxNi4zLTEwOS4zIDQ1LjNMMTM5IDE0OUM5MSAxOTcgNjQgMjYyLjEgNjQgMzMwbDAtNTUuM0wyNTMuNiAxOTUuOGM2LjItNi4yIDE2LjQtNi4yIDIyLjYgMGM1LjQgNS40IDYuMSAxMy42IDIuMiAxOS44eiIvPjwvc3ZnPg==">
+        <link href="notes/styles.css" rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <style>
+            /* Add a back to home button */
+            #backToHome {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                z-index: 10000;
+                background: linear-gradient(to left, #85bb65 0%, #0ad081 59%, #a2f58b 100%);
+                color: black;
+                padding: 8px 16px;
+                text-decoration: none;
+                border-radius: 5px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 14px;
+                font-weight: bold;
+                transition: 0.3s;
+                box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+            }
+            #backToHome:hover {
+                color: white;
+                box-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+                transform: translateY(-2px);
+            }
+        </style>
+    </head>
+    <body>
+        <a href="index.html" id="backToHome">← Back to Portfolio</a>
+        <div id="app"></div>
+        <script src="notes/bundle.js"></script>
+    </body>
+</html>
