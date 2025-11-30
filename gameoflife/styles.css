@@ -1,0 +1,246 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  color: white;
+  background-color: rgb(34, 33, 31);
+  transition: .4s;
+}
+
+.App.fade-out {
+  color: transparent;
+  background-color: black;
+}
+
+.header {
+  font-size: xxx-large;
+  margin: 10vh;
+}
+
+.fade-cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  opacity: 1;
+  transition: opacity .5s ease-out;
+  /* Fade out over 1 second */
+  z-index: 9999;
+  /* Ensure it's on top of all content */
+}
+
+.fade-cover.fade-out {
+  transition: .7s;
+  /* height: 1vh; */
+  /* width: 1vw; */
+  padding: 90%;
+  opacity: 0;
+  z-index: -1;
+}
+
+.pic {
+  justify-self: center;
+}
+
+#smallPic {
+  max-width: 50%;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+  /* Prevents scrolling */
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  /* Prevents scrolling */
+}
+
+button {
+  justify-self: center;
+  margin: 1px;
+  border-radius: 40%;
+}
+.buttons {
+  min-width: 75vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.controls {
+  z-index: 1000;
+  width: 100vw;
+  bottom: 0vh;
+  padding: 1px;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: grey;
+}
+
+.grid {
+  display: 'flex';
+  flex-wrap: 'wrap';
+  flex-direction: 'column';
+  border-color: grey;
+  border-width: 6px;
+  border-style: solid;
+  text-align: center;
+  cursor: pointer;
+}
+
+#clearButton,
+#arrowButton,#arrowButtontrue,#arrowButtonfalse {
+  font-size: large;
+}
+
+#arrowButtonfalse {
+  background-color: #cbcbcb;
+  transform: scale(0.90);
+  /* Slightly shrink the button */
+}
+
+#arrowButton:active {
+  background-color: #cbcbcb;
+  transform: scale(0.98);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: white;
+  width: 25vw;
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainOptions {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainPageButton {
+  color: black;
+  background: white;
+  margin: 3vh 0;
+  width: 80%;
+  font-size: x-large;
+  transition: .75s;
+  border-radius: 0%;
+}
+
+.mainPageButton:hover {
+  border-radius: 60%;
+  border-color: transparent;
+  color: white;
+  background: transparent;
+  /* width: 70%; */
+  /* Removes background color */
+}
+
+.mainPageButton.fade-out {
+  transition: .4s;
+  color: transparent;
+  background-color: black;
+  border-color: transparent;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background-color: rgb(66, 75, 84);
+  border: 1px solid #f1f1f1;
+  border-radius: 6px;
+  color: white;
+  padding: 0em 3em 3em;
+  width: 60vw;
+  max-width: 80%;
+  max-height: 90%;
+  overflow-y: scroll;
+  z-index: 1000;
+}
+
+.modal-close-button {
+  position: relative;
+  left: 51%;
+  margin-top: 1%;
+  background: none;
+  padding: 1% 1%;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: none;
+  font-weight: bold;
+  color: white;
+}
+
+.modal-close-button:hover {
+  color: gray;
+}
+
+@media screen and (max-width: 1000px) {
+  button {
+    margin: 1px;
+  }
+
+  .grid {
+    touch-action: none
+  }
+  .info {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: xx-small;
+    position: relative;
+    align-items: start;
+  }
+
+  #clearButton,
+  #arrowButton,#arrowButtontrue,#arrowButtonfalse {
+    font-size: small;
+  }
+
+  .modal-content {
+    border-radius: 3px;
+    padding: 0em 2em 2em 1em;
+    width: 50vw;
+    font-size: small;
+  }
+
+  .controls {
+    font-size: x-small;
+  }
+}
