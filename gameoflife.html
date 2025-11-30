@@ -9,33 +9,56 @@
     <link rel="icon" type="image/jpg" href="gameoflife/icons/SpaceShip.jpg">
     <link rel="stylesheet" href="gameoflife/styles.css">
     <style>
-        /* Add a back to home button in bottom right corner */
-        #backToHome {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 10000;
-            background: linear-gradient(to left, #85bb65 0%, #0ad081 59%, #a2f58b 100%);
+        /* Add a back to portfolio button on the home page only */
+        .App .backToPortfolioButton {
             color: black;
-            padding: 8px 16px;
+            background: white;
+            margin: 3vh 0;
+            width: 80%;
+            font-size: x-large;
+            transition: .75s;
+            border-radius: 0%;
+            border: 1px solid white;
+            cursor: pointer;
             text-decoration: none;
-            border-radius: 5px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 14px;
-            font-weight: bold;
-            transition: 0.3s;
-            box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+            display: inline-block;
+            padding: 0.5em 1em;
+            box-sizing: border-box;
         }
-        #backToHome:hover {
+
+        .App .backToPortfolioButton:hover {
+            border-radius: 60%;
+            border-color: transparent;
             color: white;
-            box-shadow: 2px 2px 5px rgba(0,0,0,0.7);
-            transform: translateY(-2px);
+            background: transparent;
+        }
+
+        .App.fade-out .backToPortfolioButton {
+            transition: .4s;
+            color: transparent;
+            background-color: black;
+            border-color: transparent;
         }
     </style>
 </head>
 <body>
-    <a href="index.html" id="backToHome">← Back to Portfolio</a>
     <div id="app"></div>
     <script src="gameoflife/bundle.js"></script>
+    <script>
+        // Add Back to Portfolio button to the home page after the app loads
+        window.addEventListener('DOMContentLoaded', function() {
+            // Wait a bit for React to render
+            setTimeout(function() {
+                const mainOptions = document.querySelector('.mainOptions');
+                if (mainOptions && !document.querySelector('.backToPortfolioButton')) {
+                    const backButton = document.createElement('a');
+                    backButton.href = 'index.html';
+                    backButton.className = 'backToPortfolioButton';
+                    backButton.textContent = '← Back to Portfolio';
+                    mainOptions.appendChild(backButton);
+                }
+            }, 100);
+        });
+    </script>
 </body>
 </html>
